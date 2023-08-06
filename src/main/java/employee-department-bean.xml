@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.2.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.2.xsd">
+	
+	<bean id="empOne" class="com.simplilearn.junitorg.bean.Employee">
+		<property name="empId" value="101010"></property>
+		<property name="empName" value="David Smith"></property>
+		<property name="salary" value="56565.556"></property>
+		<property name="phoneNumber" value="7677878787"></property>
+	</bean>
+	
+	<bean id="empTwo" class="com.simplilearn.junitorg.bean.Employee">
+		<property name="empId" value="101012"></property>
+		<property name="empName" value="Will Smith"></property>
+		<property name="salary" value="1156565.556"></property>
+		<property name="phoneNumber" value="56757557575"></property>
+	</bean>
+	
+	<bean id="deptOne" class="com.simplilearn.junitorg.bean.Department">
+		<property name="deptId" value="100"></property>
+		<property name="deptName" value="Construction Division"></property>
+	</bean>
+	
+	<bean id="deptTwo" class="com.simplilearn.junitorg.bean.Department">
+		<property name="deptId" value="200"></property>
+		<property name="deptName" value="Tech Division"></property>
+	</bean>
+</beans>
